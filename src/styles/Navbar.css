@@ -1,0 +1,107 @@
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 80px;
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: rgba(11, 17, 32, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  backdrop-filter: blur(12px);
+}
+
+/* Logo */
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #aa3bff;
+}
+
+/* Navigation menu */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.menu a {
+  color: #aab2c5;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.menu a:hover {
+  color: #aa3bff;
+}
+
+/* Let's Talk button */
+.talk-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 11px 22px;
+  border: 1px solid #aa3bff;
+  border-radius: 8px;
+
+  color: #ffffff;
+  background: #aa3bff;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.talk-btn:hover {
+  background: transparent;
+  color: #aa3bff;
+  transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    min-height: 75px;
+    padding: 18px 5%;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .menu {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .menu a {
+    font-size: 13px;
+  }
+
+  .talk-btn {
+    padding: 9px 15px;
+    font-size: 13px;
+  }
+}
